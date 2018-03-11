@@ -1,0 +1,11 @@
+.ItemList {
+    width: 80%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  
+  .ItemList .Item {
+    margin: 1em 0;
+  }

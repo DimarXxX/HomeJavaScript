@@ -1,0 +1,15 @@
+.Button {
+    border: 0.11em solid #465775;
+    border-radius: 0.1em;
+    padding: 0.1em 1em;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  .Button:hover {
+    background-color: #465775;
+    color: #EF6F6C;
+  }
+  
