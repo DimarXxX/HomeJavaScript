@@ -1,11 +1,15 @@
-import React from 'react';
+/*import React from 'react';
 
-const NewGif = (url) => {
+const NewGif = () => {
     return (
         <div>
-            <img src ={url} />
+            <img src ={gifList} />
         </div>
     );
 }
-
-export default NewGif;
+imgSrc (gifList) {
+    for (let i = 0; i <gifList.length; i ++) {
+        return i;
+    };
+}
+export default NewGif;*/

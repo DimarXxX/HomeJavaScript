@@ -8,12 +8,15 @@ class GifList extends Component {
         this.state = {
             list : []
         }
+        this.Search = this.Search.bind(this);
     }
     render () {
-
+        console.log(this.state)
+        const gifList = this.state.list.map(e => <img src = {e.url}/>);
         return (
             <div className = "list">
-            <GifSearch search={this.Search} />  
+            <GifSearch search={this.Search} />
+            {gifList}  
             </div>
         );
     }
@@ -23,9 +26,8 @@ class GifList extends Component {
         const newUrl = baseUrl + word;
         fetch (newUrl)
         .then(response => response.json())
-        .then(array => console.log(array))
-        .then(gifArray => this.setState({gifs: Array4794.data.images.original.url}))
-        //.then(gifArray => console.log(gifArray))
+        .then(list => list.data.map(g => g.images.fixed_height))
+        .then(gifArray => this.setState({list : gifArray}))
     }
 }
 export default GifList;
