@@ -1,0 +1,15 @@
+.NewItem {
+  display: flex;
+  align-items: center;
+
+  padding: 1em;
+  border-radius: 0 0.1em 0.1em 0;
+
+  background-color: #59C9A5;
+
+  font-size: 1.5em;
+}
+
+.NewItem input {
+  margin-right: 1em;
+}

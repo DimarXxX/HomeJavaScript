@@ -1,0 +1,13 @@
+.Todo {
+  background-color: #E5EAFA;
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+
+.Todo-completed {
+  color: #57A773;
+}
+
+.Todo-uncompleted {
+  color: #ED6A5A;
+}

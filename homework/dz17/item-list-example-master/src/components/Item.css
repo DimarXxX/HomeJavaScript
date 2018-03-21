@@ -1,0 +1,31 @@
+.Item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1em;
+
+  color: #465775;
+  background-color: #EF6F6C;
+  border-radius: 0.1em;
+
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.Item-done {
+  background-color: #56E39F;
+}
+
+.Item-stats, .Item-count, .Item-actions {
+  display: flex;
+  align-items: center;
+}
+
+.Item-count {
+  font-size: 1.2em;
+}
+
+.Button:first-child {
+  margin: 0 1em;
+}

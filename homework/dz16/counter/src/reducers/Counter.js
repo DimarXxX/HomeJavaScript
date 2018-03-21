@@ -1,9 +1,8 @@
 export default (state = [0, 0, 0, 0], action) => {
     switch (action.type) {
         case 'INCREMENT':
-            for (let i = 0; i < this.state.length; i++) {
-                return state + 1;
-            }
+        const i = action.i;
+        return [...state.slice(0,i), state[i]+1, ...state.slice(i+1)];
         default:
             return state;
     }

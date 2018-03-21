@@ -5,6 +5,7 @@ class Counter extends Component {
         super(props);
         props.store.subscribe(() => {
             this.setState({ value: props.store.getState() });
+            props.store.subscribe(() => this.forceUpdate());
         });
 
         this.state = {
